@@ -19,13 +19,19 @@ namespace Exemp_126.Entities
             LimiteEmprestimo = limiteEmprestimo;
         }
 
-        public void Emprestimo(double valor)
+         public void Emprestimo(double valor)
         {
 
             if (valor <= LimiteEmprestimo)
             {
                 Saldo += valor;
             }
+        }
+
+        // incluiundo SEALED no método para que seja restrido subscrever o método da superclasse
+        public sealed override void Saque(double valor)
+        {
+            Saldo += valor - 5.0;
         }
     }
 }

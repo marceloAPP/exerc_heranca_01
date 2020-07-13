@@ -1,6 +1,7 @@
 ﻿namespace Exemp_126.Entities
 {
-    class ContaPoupanca : Conta
+    // incluiundo SEALED na classe para que seja restrido que a classe seja herdada
+    sealed class ContaPoupanca : Conta
     {
         public double TaxaJuros { get; set; }
 
