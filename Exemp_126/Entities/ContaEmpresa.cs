@@ -9,7 +9,7 @@ namespace Exemp_126.Entities
     {
         public double LimiteEmprestimo { get; set; }
 
-        public ContaEmpresa()
+        public ContaEmpresa() 
         {
         }
 
