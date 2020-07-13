@@ -16,6 +16,13 @@
             Saldo += Saldo + TaxaJuros;
         }
 
+        public override void Saque(double valor)
+        {
+            base.Saque(valor);
+            Saldo += 3.0;
+        }
+
     }
+
 
 }

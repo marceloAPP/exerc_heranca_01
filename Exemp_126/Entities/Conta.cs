@@ -17,9 +17,9 @@
             Saldo = saldo;
         }
 
-        public void Saque(double valor)
+        public virtual void Saque(double valor)
         {
-            Saldo -= valor;
+            Saldo -= valor + 5.0;
         }
 
         public void Deposito(double valor)

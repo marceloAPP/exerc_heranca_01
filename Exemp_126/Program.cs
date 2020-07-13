@@ -37,6 +37,15 @@ namespace Exemp_126
                 conta5.AtualizaSaldo();
                 Console.WriteLine("ATUALIZA");
             }
+
+            Conta cc1 = new Conta(1001, "Alex", 500.0);
+            Conta cc2 = new ContaPoupanca(1002, "Anna", 500.0, 0.01);
+
+            cc1.Saque(10.0);
+            cc2.Saque(10.0);
+
+            Console.WriteLine(cc1.Saldo);
+            Console.WriteLine(cc2.Saldo);
         }
     }
 }
