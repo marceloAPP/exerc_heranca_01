@@ -9,7 +9,7 @@ namespace Exemp_126.Entities
     {
         public double LimiteEmprestimo { get; set; }
 
-        public ContaEmpresa() 
+        public ContaEmpresa()
         {
         }
 
@@ -19,18 +19,13 @@ namespace Exemp_126.Entities
             LimiteEmprestimo = limiteEmprestimo;
         }
 
-        public void Emprestimo(double valor) {
+        public void Emprestimo(double valor)
+        {
 
             if (valor <= LimiteEmprestimo)
             {
                 Saldo += valor;
-                Console.WriteLine($"Emprestimo R${valor.ToString("F2",CultureInfo.InvariantCulture)} finalidado com sucesso!");
             }
-            else
-            {
-                Console.WriteLine("Emprestimo não autorizado!");
-            }
-
         }
     }
 }
